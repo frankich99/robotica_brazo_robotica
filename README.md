@@ -8,7 +8,6 @@ Repositorio oficial del proyecto de desarrollo, calibración, control y document
 * **Sandro Alexander Salluca Chile**
 * **Noe Franklin Choquenaira Quispe**
 * **Flor Deliz Ccasa Ccahuana**
-* **Luis Alejandro Ramos Aguirre**
 
 **Docente de Cátedra:** Ing. Jose Mauro Pillco Quispe  
 **Semestre:** 2026-II  
@@ -22,11 +21,11 @@ El proyecto mantiene una estructura modular y organizada:
 ```
 BRAZO ROBOTICO/
 ├── codigo/
-│   ├── firmware_brazo_esp32/    # Firmware principal con interfaz web y streaming
-│   │   ├── brazoR.ino           # Código Arduino para ESP32-CAM + PCA9685
-│   │   └── pagina.h             # GUI Web interactiva (HTML/CSS/JS)
-│   ├── prueba_camara_esp32/     # Script diagnóstico de video OV2640
-│   └── prueba_i2c_pca9685/      # Escáner I2C para validación de bus
+│   ├── brazo_camara_web/        # Control integral: GUI Web interactiva + streaming MJPEG + 6 servos PCA9685
+│   ├── camara_esp32_ap_stream/  # Servidor AP independiente de video streaming MJPEG para ESP32-CAM
+│   ├── firmware_brazo_esp32/    # Firmware base con interfaz web y control I2C PCA9685
+│   ├── prueba_camara_esp32/     # Script diagnóstico de video y captura OV2640
+│   └── prueba_i2c_pca9685/      # Escáner I2C para validación del bus PCA9685 (GPIO 13/14)
 ├── img/                         # Registro fotográfico y evidencias de componentes
 ├── latex/                       # Documentación formal e informe técnico
 │   ├── main.tex                 # Fuente del informe en LaTeX

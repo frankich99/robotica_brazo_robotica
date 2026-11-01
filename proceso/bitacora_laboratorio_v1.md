@@ -8,7 +8,6 @@
 * Sandro Alexander Salluca Chile  
 * Noe Franklin Choquenaira Quispe  
 * Flor Deliz Ccasa Ccahuana  
-* Luis Alejandro Ramos Aguirre  
 **Fecha:** Octubre de 2026  
 
 ---
